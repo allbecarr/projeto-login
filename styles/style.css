@@ -5,3 +5,60 @@ Paleta de Cores:
     Verde: #49a09d;
     Lilás: #5f2c82;
 */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700&display=swap');
+/*font-family: 'Poppins', sans-serif;*/
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body, html{
+    height: 100vh;
+    width: 100vw;
+    background-color: #5f2c82;
+}
+
+main{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+section#login{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    background-color: white;
+    width: 250px;
+    height: 500px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.450);
+}
+
+#image{
+    display: block;
+    height: 40vh;
+    /*border-radius: 20px 20px 0px 0px;*//* Também funciona para esconder a parte da foto que ultrapassa a borda. */
+    background:#49a09d url('../imagem/metal.jpg') left bottom no-repeat;
+    background-size: cover;
+}
+
+#formulario{
+    display: block;
+    padding: 10px;
+}

@@ -20,25 +20,21 @@
                 <p>
                     Seja bem-vindo(a) novamente. Faça login para acessar a sua conta e fazer as configurações no seu ambiente.
                 </p>
-                <form action="login.php" method="post">
-                    <P>
-                        <label for="iemail">
-                            <span class="material-symbols-outlined">
-                                person
-                            </span>
-                        </label>
-                        <input type="email" name="email" id="iemail" placeholder="Digite o seu Email">
-                    </P>
-                    <p>
-                        <label for="ipaswd">
-                            <span class="material-symbols-outlined">
-                                vpn_key
-                            </span>
-                        </label>
-                        <input type="password" name="paswd" id="ipaswd" placeholder="Digita a sua Senha">
-                    </p>
+                <form action="login.php" method="post" autocomplete="on">
+                    <div class="campo">
+                        <span class="material-symbols-outlined">person</span>
+                        <input type="email" name="email" id="iemail" placeholder="Digite o seu Email" autocomplete="email" required maxlength="30">
+                        <label for="iemail">Login</label>
+                    </div>
+                    <div class="campo">
+                        <span class="material-symbols-outlined">vpn_key</span>
+                        <input type="password" name="paswd" id="ipaswd" placeholder="Digita a sua Senha" autocomplete="current-password" required minlength="8" maxlength="12">
+                        <label for="ipaswd">Senha</label>
+                    </div>
                     <input type="submit" value="Entrar">
-                    <input type="submit" value="Esqueci a Senha">
+                    <a href="esqueci.html">
+                        Esquaci a Senha <i class="material-symbols-outlined">mail</i>
+                    </a>
                 </form>
             </div>
         </section>

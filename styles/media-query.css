@@ -7,6 +7,7 @@
 
     section#login{
         width: 80vw;
+        height: 315px;
     }
 
     #image{
@@ -19,11 +20,20 @@
         float: right;
         width: 70%;
     }
+
+    #formulario >p{
+        margin: 15px 0px;
+    }
 }
 
 @media screen and (min-width: 992px) {
+    body{
+        background-image: linear-gradient(to top,#49a09d, #5f2c82);
+    }
+    
     section#login{
         width: 950px;
+        height: 370px;
     }
 
     #image{
@@ -42,6 +52,7 @@
     }
     
     #formulario > p{
-        font-size: 1.2em;
+        font-size: 1em;
+        margin: 20px 0px;
     }
 }
